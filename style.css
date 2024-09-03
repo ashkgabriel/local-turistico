@@ -1,0 +1,263 @@
+:root {
+  --background-default: #f5f4f0;
+  --border-primary: #d9d9d9;
+  --text-primary: #1b1b1b;
+  --text-secondary: #333333;
+  --text-tertiary: #696969;
+  --text-headline: #e1624f;
+  --accent-blue: #0c51a7;
+  --accent-orange: #e95e10;
+  --accent-pink: #e5245e;
+  --accent-purple: #591b98;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background-default);
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  padding: 8rem 8rem 4.8rem 8rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+}
+
+#page {
+  display: flex;
+  width: 112rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  align-self: stretch;
+}
+
+.headline {
+  color: var(--text-headline, #e1624f);
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2.2rem;
+}
+
+h1 {
+  color: var(--text-primary, #1b1b1b);
+
+  font-family: "Open Sans";
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 700;
+
+  line-height: normal;
+}
+
+#description {
+  display: flex;
+  padding: 0.4rem 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  align-self: stretch;
+}
+
+img {
+  border-radius: 2.8rem;
+  height: 660px;
+  align-self: stretch;
+}
+
+#subtitle {
+  color: var(--text-secondary, #333);
+  text-align: center;
+
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  height: 3.7rem;
+  align-self: stretch;
+}
+
+#content-list {
+  display: flex;
+  width: 112rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6.4rem;
+}
+
+.divider {
+  background: var(--border-primary, #d9d9d9);
+  width: 100%;
+  height: 1px;
+}
+
+h2 {
+  color: var(--text-primary, #1b1b1b);
+
+  font-family: "Open Sans";
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#title-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+p {
+  color: var(--text-secondary, #333);
+
+  /* paragraph */
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4.8rem;
+  align-self: stretch;
+}
+
+.card-travel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
+}
+
+.card-travel img {
+  height: 350px;
+  align-self: stretch;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  align-self: stretch;
+}
+
+li {
+  list-style: none;
+  font-size: 28px;
+  font-weight: 700;
+}
+ul.numbered {
+  counter-reset: mynum;
+}
+
+h3.numbered:before {
+  content: counter(mynum) ". ";
+  counter-increment: mynum;
+  font-weight: bold;
+}
+
+h3 {
+  color: var(--text-primary, #1b1b1b);
+
+  /* h3 */
+  font-family: "Open Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.content-card {
+  width: 112rem;
+}
+
+.content-card strong {
+  display: block;
+  font-size: 1.6rem;
+  margin-top: 3.3rem;
+}
+
+.content-card li {
+  font-size: 1.6rem;
+  color: var(--accent-blue);
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+#casais-familia-orcamento :nth-child(1) {
+  color: var(--accent-blue);
+  font-size: 1.6rem;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+#casais-familia-orcamento :nth-child(2) {
+  color: var(--accent-pink);
+  font-size: 1.6rem;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+#casais-familia-orcamento :nth-child(3) {
+  color: var(--accent-orange);
+  font-size: 1.6rem;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.description {
+  color: var(--text-secondary, #333);
+  text-align: center;
+
+  /* paragraph */
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+footer span {
+  color: var(--text-secondary, #333);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Alice;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
